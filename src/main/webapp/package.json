@@ -1,0 +1,26 @@
+{
+  "name": "front-end-dojo-contact-list",
+  "version": "1.0.0",
+  "description": "Proposed exercise for candidates evaluation",
+  "dependencies": {
+    "dojo": "1.12.2",
+    "dijit": "1.12.2",
+    "dojox": "1.12.2",
+    "dgrid": "1.1.0",
+    "dojo-dstore": "1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cinqtechnologies/front-end-dojo-contact-list.git"
+  },
+  "keywords": [
+      "dojo",
+      "dstore",
+      "dgrid"
+  ],
+  "author": "CINQ Technologies",
+  "license": "ISC"
+}

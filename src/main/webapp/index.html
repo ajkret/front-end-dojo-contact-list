@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        Hello World
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/node_modules/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="/node_modules/dgrid/css/dgrid.css">
+</head>
+
+<body class="claro">
+    <script>
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "dgrid",
+                location: '/node_modules/dgrid'
+            }, {
+                name: "dstore",
+                location: '/node_modules/dojo-dstore'
+            }]
+        };
+    </script>
+    <script src="/node_modules/dojo/dojo.js"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>

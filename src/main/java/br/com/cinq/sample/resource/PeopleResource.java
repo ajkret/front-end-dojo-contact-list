@@ -36,19 +36,17 @@ public class PeopleResource {
     private List<Person> generateFakeList() {
         Random rnd = new Random();
         String[] name = { "Adam", "Abe", "Maria", "Rose", "Mario", "Luigi"};
-        String[] surname = { "Lincoln", "Franklin", "Jackson", "Miyazaki", "M'bebe"};
+        String[] surname = { "Lincoln", "Franklin", "Jackson", "Miyazaki", "M'bebe", "Berger"};
         List<Person> list=new ArrayList<Person>();
         
-        for(int i=0;i<10;i++) {
-            Person person = new Person();
-            person.setId(i);
-            person.setName(name[rnd.nextInt(name.length)] + " " + surname[rnd.nextInt(surname.length)]);
-            person.setDisclosableInfo("Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
-            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini" +
-            "m veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c"+
-            "onsequat.");
-            
-            list.add(person);
+        int counter = 0;
+        for(int i=0;i<6;i++) {
+            for(int j=0;j<6;j++) {
+                Person person = new Person();
+                person.setId(counter++);
+                person.setName(name[i] + " " + surname[j]);
+                list.add(person);
+            }
         }
         
         return list;

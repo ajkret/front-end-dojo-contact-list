@@ -1,4 +1,4 @@
-# front-end-angularjs-automate-tasks
+# front-end-dojo-contact-list
 
 Enclosed in this project, lies a small Java application that expose a 
 REST service that returns a list of People.
@@ -12,7 +12,6 @@ For that, you will need to install Java JDK and Maven.
 
 After you sucessfully installed everything, just open a command and run:
 
-
     mvn clean package
     
 To run, either call Java or run Maven
@@ -22,26 +21,33 @@ To run, either call Java or run Maven
 or
 
     mvn spring-boot:run
-    
+
+The client installation you must run
+
+    npm install
+	
 ## Proposed Exercise
 
 Create an app to present the resulting data from the REST service. The way you present is up to you, as long you follow the premises.
 
 Premises:
-* DO NOT USE *\<table\>*
-* The application must be implemented using _AngularJS_. 
-* The application must be _Responsive_.
-* The application must be presented in only three resolutions: _Full HD_, _HD_ and _Wide VGA_. 
-* Do _not_ use any _layout frameworks_ like Bootstrap, Foundation, etc. Implement your own solution. Feel free to use other frameworks for UX 
-* You are free to change the application included in every aspect.
+* Use *dstore* to hold the data
+* Use *dgrid* to create the contact list
+* Create a way to add and remove contacts into the local list
+* The application must be implemented using _Dojo_. 
 
 ## Challenges
 
-1. Minify using the Automation Tool of your choice, except MAVEN plugins.
-2. Replace the Java Application by one written using Node.js _or_ ...
-3. ...automate test using an end-to-end test framework for AngularJS. 
-
+1. Store locally on client using IndexedDB _or_ ...
+2. Create a list CRUD on server
 
 ## Measuring results
+
 Send the exact instructions on how to install dependencies, compile and run
 the application, in a way even a newbie would understand. 
+
+## Useful links
+
+* https://dojotoolkit.org/
+* http://dgrid.io/
+* http://dstorejs.io/
