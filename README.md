@@ -1,6 +1,6 @@
 # front-end-dojo-contact-list
 
-Enclosed in this project, lies a small Java application that expose a 
+Enclosed in this project, lies a small Java application that exposes a 
 REST service that returns a list of People.
 
 This service can be reached using the following URL:
@@ -26,6 +26,8 @@ The client installation you must run
 
     npm install
 	
+inside the webapp folder
+
 ## Proposed Exercise
 
 Create an app to present the resulting data from the REST service. The way you present is up to you, as long you follow the premises.
@@ -39,7 +41,8 @@ Premises:
 ## Challenges
 
 1. Store locally on client using IndexedDB _or_ ...
-2. Create a list CRUD on server
+2. Create a list CRUD on server's contact list _or_ ...
+3. Import and create intern tests
 
 ## Measuring results
 
